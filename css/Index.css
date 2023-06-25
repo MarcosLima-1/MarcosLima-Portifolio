@@ -448,10 +448,15 @@ footer p {
 		display: flex;
 	}
 
+	.section_1 {
+		text-align: center;
+	}
+
 	.section_2 {
 		display: flex;
 		flex-direction: column;
 		height: auto;
+		text-align: center;
 	}
 
 	#eufoto {
