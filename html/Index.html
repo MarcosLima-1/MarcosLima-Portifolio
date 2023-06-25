@@ -12,7 +12,7 @@
 
 	<body>
 		<header id="header">
-			<div class="header">
+			<div class="header" id="header_css">
 				<nav class="Menu_options">
 					<div class="logo">
 						<i class="fa-solid fa-crown"></i>
@@ -27,12 +27,12 @@
 				</nav>
 				<button class="button" id="menu_bar_button" onclick="toggleDiv()"><i class="fa-solid fa-bars"></i></button>
 			</div>
-			<nav class="menu_bar_nav">
+			<nav class="menu_bar_nav" id="menu_bar_nav">
 				<ul class="Menu_bar">
-					<li><a href="#about_me">About Me</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact" class="button bcontact">Contact Me</a></li>
+					<li><a onclick="toggleDiv()" class="button" href="#about_me">About Me</a></li>
+					<li><a onclick="toggleDiv()" class="button" href="#skills">Skills</a></li>
+					<li><a onclick="toggleDiv()" class="button" href="#projects">Projects</a></li>
+					<li><a onclick="toggleDiv()" class="button" href="#contact">Contact Me</a></li>
 				</ul>
 			</nav>
 		</header>
