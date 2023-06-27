@@ -113,6 +113,13 @@ body {
 	font-weight: 500;
 }
 
+.Menu_options_list li:hover {
+	transform: scale(1.05);
+}
+.Menu_options_list li:active {
+	transform: scale(0.95);
+}
+
 /* ---------- main ---------- */
 
 main {
