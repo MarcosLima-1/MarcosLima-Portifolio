@@ -75,6 +75,7 @@ body {
 .img {
 	display: block;
 	height: 100%;
+	width: 100%;
 	border-radius: 28px;
 }
 
@@ -175,6 +176,11 @@ section {
 	gap: 1rem;
 }
 
+.conteudo_2 p {
+	font-weight: 500;
+	font-size: 18px;
+}
+
 /* ---------- section 3 ---------- */
 
 .section_3 {
@@ -185,7 +191,7 @@ section {
 }
 
 .categorias {
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	width: 90%;
@@ -352,13 +358,11 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: var(--secondary-button);
 }
 
 footer p {
 	padding: 5px;
-	border-radius: 28px;
-	margin-top: 30px;
-	background-color: var(--secondary-button);
 }
 
 #buttonup {
