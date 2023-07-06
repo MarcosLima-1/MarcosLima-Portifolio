@@ -32,16 +32,8 @@ body {
 	background-color: var(--background);
 }
 
-.tcenter {
-	text-align: center;
-}
-
-.ttext1 {
+.title {
 	font-size: 3rem;
-}
-
-.bborder {
-	border-bottom: solid 2px var(--accent);
 }
 
 .sbox {
@@ -74,12 +66,18 @@ body {
 
 .img {
 	display: block;
-	height: 100%;
 	width: 100%;
 	border-radius: 28px;
 }
 
 /* ---------- header ---------- */
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 9999;
+}
 
 .header {
 	display: flex;
@@ -88,6 +86,7 @@ body {
 	padding: 10px;
 	background-color: var(--secondary-button);
 	justify-content: space-between;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -121,59 +120,92 @@ body {
 	transform: scale(0.95);
 }
 
-/* ---------- main ---------- */
-
-main {
-	display: grid;
-	align-items: center;
-	margin-bottom: 50px;
-}
-
-.vh1 {
-	height: 100vh;
-}
-
-.vh2 {
-	height: 80vh;
-}
-
-.bg1 {
-	background-color: var(--secondary-button);
-}
-
 /* ---------- section 1 ---------- */
 
 section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
 	padding: 2rem 0 2rem 0;
 }
 
 .section_1 {
+	margin-top: 70px;
+	height: 100vh;
+}
+
+.arrow {
+	position: absolute;
+	bottom: 20px;
+	left: 25px;
+}
+
+.conteudo_1 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	width: 90%;
 	gap: 1rem;
 	margin: auto;
+}
+
+.social_icons {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.social_icons i {
+	display: flex;
+	font-size: 2rem;
+	background-color: var(--accent);
+	color: var(--secondary-button);
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	justify-content: center;
+	align-items: center;
+	transition: transform ease 0.2s;
+}
+
+.social_icons i:hover {
+	transform: scale(1.05);
+}
+
+.social_icons i:active {
+	transform: scale(0.95);
 }
 
 /* ---------- section 2 ---------- */
 
 .section_2 {
+	background-color: var(--secondary-button);
+}
+
+.conteudo_2 {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	gap: 2rem;
 	width: 90%;
 	margin: auto;
 }
 
-.conteudo_2 {
+#eufoto {
+	width: 50%;
+	border-radius: 50%;
+	border: solid 3px var(--accent);
+}
+
+.texts_2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
+	width: 100%;
 }
 
 .conteudo_2 p {
@@ -183,7 +215,7 @@ section {
 
 /* ---------- section 3 ---------- */
 
-.section_3 {
+.conteudo_3 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -191,7 +223,7 @@ section {
 }
 
 .categorias {
-	display: none;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 90%;
@@ -203,11 +235,11 @@ section {
 	border: solid 1px var(--accent);
 }
 
-.skill {
+.type_skill {
 	width: 90%;
 }
 
-.conteudo_3 {
+.tabs {
 	display: flex;
 	justify-content: center;
 	gap: 4rem;
@@ -247,6 +279,10 @@ section {
 /* ---------- section 4 ---------- */
 
 .section_4 {
+	background-color: var(--secondary-button);
+}
+
+.conteudo_4 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -254,10 +290,9 @@ section {
 
 	gap: 2rem;
 	width: 90%;
-	margin: auto;
 }
 
-.conteudo_4 {
+.tabs_1 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	justify-items: center;
@@ -271,6 +306,19 @@ section {
 	height: auto;
 	margin: 20px 0 20px 0;
 	gap: 1rem;
+}
+
+.slotbuttons {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.slotbuttons .button {
+	width: 100%;
+	text-align: center;
 }
 
 .tech {
@@ -287,42 +335,33 @@ section {
 	font-size: 12px;
 }
 
-.img1 {
-	display: block;
-	height: auto;
-	width: 100%;
-	border-radius: 28px;
-}
-
 /* ---------- section 5 ---------- */
 
-.section_5 {
+.conteudo_5 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
+	width: 90%;
 	gap: 2rem;
 }
 
-.conteudo_5 {
+.contatos {
 	display: flex;
 	gap: 2rem;
 	width: 90%;
 }
 
-.conteudo_5 .sbox {
-	width: 100%;
-
+.contatos .sbox {
 	cursor: pointer;
-
-	background-color: var(--background);
+	background-color: var(--primary-button);
 	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.conteudo_5 .sbox:hover {
+.contatos .sbox:hover {
 	transform: scale(1.05);
 }
-.conteudo_5 .sbox:active {
+.contatos .sbox:active {
 	transform: scale(0.95);
 }
 
@@ -330,26 +369,16 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	gap: 1rem;
 }
 
-.Buttonicon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-
-	font-size: 50px;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-
-	background-color: var(--color-Accent);
+.contacticons p {
+	color: var(--secondary-button);
 }
 
 .Buttonicon i {
 	font-size: 90px;
+	color: var(--secondary-button);
 }
 
 /* ---------- footer ---------- */
@@ -459,11 +488,11 @@ footer p {
 		display: flex;
 	}
 
-	.section_1 {
+	.conteudo_1 {
 		text-align: center;
 	}
 
-	.section_2 {
+	.conteudo_2 {
 		display: flex;
 		flex-direction: column;
 		height: auto;
@@ -475,17 +504,17 @@ footer p {
 		height: auto;
 	}
 
-	.conteudo_3 {
+	.tabs {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.conteudo_4 {
+	.tabs_1 {
 		grid-template-columns: 1fr;
 	}
 
-	.conteudo_5 {
+	.contatos {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

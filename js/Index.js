@@ -1,25 +1,7 @@
-const btu = document.getElementById("buttonup");
-
-function scrollup(){
-    window.scrollTo(0,0)
-};
-
-function ocultar(){
-    if(window.scrollY > 100){
-        btu.style.display = "flex"
-    } else {
-        btu.style.display = "none"
-    }
-};
-
-ocultar();
-
-window.addEventListener("scroll", ocultar);
-
 var tabsbuttons = document.querySelectorAll(".section_4 .categorias .button")
 var tabsbuttons1 = document.querySelectorAll(".section_3 .categorias .button")
-var tabs = document.querySelectorAll(".conteudo_4")
-var tabs1 = document.querySelectorAll(".conteudo_3")
+var tabs = document.querySelectorAll(".tabs_1")
+var tabs1 = document.querySelectorAll(".tabs")
 
 function projectstabs(panelindex){
     tabsbuttons.forEach(function(node){
