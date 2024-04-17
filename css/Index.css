@@ -46,8 +46,6 @@ p {
 }
 
 .sbox {
-	width: 95%;
-	margin: auto;
 	padding: 1.5rem;
 	border-radius: 16px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -162,7 +160,7 @@ section {
 
 .section_1 {
 	position: relative;
-	height: 700px;
+	height: 800px;
 }
 
 .container_section1 {
@@ -410,6 +408,7 @@ section {
 
 .contatos {
 	display: flex;
+	justify-content: center;
 	width: 100%;
 	gap: 2rem;
 }
