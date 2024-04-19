@@ -81,6 +81,9 @@ p {
 	display: block;
 	width: 100%;
 }
+.title.boder {
+	border-bottom: 2px var(--accent) solid;
+}
 /* #endregion */
 
 /* #region header */
@@ -264,9 +267,6 @@ section {
 }
 .title {
 	width: fit-content;
-}
-.texts_2 .title {
-	border-bottom: 2px var(--accent) solid;
 }
 
 .texts_2 p {
