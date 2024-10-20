@@ -180,7 +180,7 @@ section {
 	text-wrap: balance;
 	display: flex;
 	flex-direction: column;
-	max-width: 500px;
+	max-width: 300px;
 	gap: 1rem;
 	font-size: 24px;
 }
@@ -201,7 +201,8 @@ section {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	width: 50%;
+	width:300px;
+	height: 300px;
 	max-width: 450px;
 	border: solid 3px var(--accent);
 	border-radius: 50%;
@@ -539,10 +540,7 @@ footer p {
 	}
 
 	.eufoto {
-		width: 80%;
-		height: auto;
-		max-width: 500px;
-		max-width: 500px;
+		display: none;
 	}
 
 	.contatos {
@@ -558,6 +556,7 @@ footer p {
 	}
 	.conteudo_1 {
 		text-align: center;
+		text-wrap: balance;
 	}
 	.container_section1 {
 		flex-direction: column;
@@ -565,6 +564,7 @@ footer p {
 	.tabs_1 {
 		grid-template-columns: 1fr;
 	}
+
 	.container_section1 .social_icons {
 		flex-direction: row;
 		height: fit-content;
